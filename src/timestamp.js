@@ -1,6 +1,6 @@
 async function getLastCheckedTimestamp() {
     const storage = await chrome.storage.local.get("lastChecked");
-    return storage.lastChecked;
+    return storage.lastChecked || 0;
 }
 
 async function setLastCheckedTimestamp() {
