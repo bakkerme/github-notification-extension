@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap');
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+* {
+    font-family: 'Public Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #eef1f8;
+}
+
+#container {
+    width: 338px;
+    background-color: white;
+    box-shadow: #00000017 0px 0px 20px 16px;
+    padding: 25px;
+    border-radius: 14px;
+    position: relative;
+    bottom: 150px;
+    overflow: hidden;
+}
+
+h2 {
+    margin: 0;
+    color: #000000d6;
+    font-weight: 700;
+    margin-bottom: 22px;
+    font-size: 20px;
+}
+
+p {
+    text-align: justify;
+    font-size: 14px;
+    color: #757575;
+    line-height: 20px;
+}
+
+input[name="pat"] {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid hsl(216deg 38% 85%);
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 18px;
+    margin-bottom: 34px;
+}
+
+
+input[name="pat"]::placeholder {
+    color: #9b9b9b;
+}
+
+#submitContainer {
+    position: relative;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    display: block;
+    color: #ffffff;
+    background-color: #2B4BF2;
+    border: none;
+    border-radius: 9px;
+    padding: 13px;
+    margin-top: -4px;
+    font-weight: 600;
+    width: 100%;
+    font-size: 14px;
+
+    transition: cubic-bezier(0.18, 0.89, 0.32, 1.28) 400ms;
+}
+
+input[type="submit"].disabled {
+    cursor: initial;
+    background-color: #b5b5b5;
+}
+
+#icon {
+    opacity: 0;
+    fill: #5FD754;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    right: 118px;
+    transition: cubic-bezier(0.18, 0.89, 0.32, 1.28) 300ms;
+}
+
+#icon.show {
+    opacity: 1;
+}

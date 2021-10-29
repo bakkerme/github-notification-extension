@@ -1,0 +1,11 @@
+{
+  "name": "Notifications for GitHub",
+  "description": "Recieve your GitHub notifications via your browser",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "serviceWorker.bundle.js"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "notifications", "alarms"]
+}

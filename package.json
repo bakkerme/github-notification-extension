@@ -1,0 +1,23 @@
+{
+  "name": "github-notification-extension",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@octokit/auth-oauth-device": "^3.1.2",
+    "@octokit/core": "^3.5.1",
+    "octokit": "^1.7.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1",
+    "zip-webpack-plugin": "^4.0.1"
+  },
+  "scripts": {
+    "build": "webpack --config ./webpack.production.config.js",
+    "watch": "webpack --config ./webpack.development.config.js"
+  }
+}
