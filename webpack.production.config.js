@@ -8,7 +8,6 @@ module.exports = {
         ...baseConfig.plugins,
         new ZipPlugin({
             path: '../out',
-            extension: 'crx',
             filename: 'notifications-for-github',
         })
     ],
