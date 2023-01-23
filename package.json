@@ -7,7 +7,7 @@
   "license": "AGPL-3.0-or-later",
   "dependencies": {
     "@octokit/auth-oauth-device": "^4.0.3",
-    "@octokit/core": "^3.5.1",
+    "@octokit/core": "^4.2.0",
     "octokit": "^1.7.0"
   },
   "devDependencies": {
